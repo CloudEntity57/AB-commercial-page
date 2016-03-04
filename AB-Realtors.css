@@ -10,11 +10,11 @@ header div{
 #top-picture{
     width:350px;
 }
-#nav-bar{
+.nav-bar{
     justify-content: space-between;
     margin-top:1em;
 }
-#nav-bar img{
+.nav-bar img{
     width:100%;
     height:100%;
 }
