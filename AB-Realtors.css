@@ -11,9 +11,17 @@ header div{
     width:350px;
 }
 .nav-bar{
-    justify-content: space-between;
     margin-top:1em;
 }
+.nav-bar div{
+    flex-direction:column;
+    flex-basis:1000px;
+    height:3em;
+    
+}
+
+
+
 .nav-bar img{
     width:100%;
     height:100%;
