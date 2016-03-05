@@ -7,10 +7,26 @@ html{
     width:85%;
     margin:auto;
 }
+#top-row{
+    display:flex;
+    background-color:darkcyan;
+    height:150px;
+    justify-content:space-between;
+    padding:0px 25px;
+}
+#top-row div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center
+}
 #title-row{
     height:250px;
     background:url(milford.JPG);
     background-size: cover;
+}
+
+.company-info{
+    
 }
 #top-picture{
     margin-left:2e;
