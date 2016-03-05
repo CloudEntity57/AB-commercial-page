@@ -1,24 +1,22 @@
 
 
 html{
-    background-color:beige;
+    background-color:#FFFCEE;
 }
 .wrap{
     width:85%;
     margin:auto;
 }
 #title-row{
-    display:flex;
     height:250px;
-    justify-content: space-around;
     background:url(milford.JPG);
     background-size: cover;
 }
 #top-picture{
-    margin:auto;
+    margin-left:2e;
     width:200px;
     height:50px;
-    background:beige;
+    background:#FFFCEE;
 }
 .nav-bar{
     display:flex;
