@@ -51,7 +51,8 @@ html{
 
 @media(min-width:760px){
     #top-picture{
-        font-size-adjust: auto;
+        height:100px;
+        width:400px;
         
     }
     #title-row{
