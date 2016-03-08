@@ -21,7 +21,7 @@ html{
 }
 #title-row{
     height:250px;
-    background:url(milford.JPG);
+    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
     background-size: cover;
 }
 
@@ -63,20 +63,23 @@ html{
 }
 
 .wrap div{
-    margin:1em 1em 0 1em;
+    margin:1em 0em;
 }
 .column1{
     display:flex;
-    width:50%;
+    width:100%;
+    justify-content: space-around;
+    padding:0em 1em;
     
 }
 
 .column2{
     width:100%;
+    padding:0em 1em;
 }
 .column1 img{
     border: 1px solid black;
-    width:100%;
+    width:50%;
     height:100%;
 }
 .column2 h1{
@@ -123,6 +126,9 @@ footer{
     width:40%;
     
 }
+    .column1 img{
+        width:100%;
+    }
 
 .column2{
     width:60%;
