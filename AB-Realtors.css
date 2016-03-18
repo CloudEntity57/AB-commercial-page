@@ -135,10 +135,10 @@ html{
 
 }
 .picture-box{
-    width:50%;
+    width:100%;
     float:right;
-    
     margin:0em 0em 2em 2em;
+    display:none;
     
 }
 .picture-box img{
@@ -222,16 +222,23 @@ footer{
     width:30%;
     
 }
-    
+   
 
-.column2{
-    width:70%;
-}
+    .column2{
+        width:70%;
+    }
 
-.column-left{
-    width:100%;
-}
+    .column-left{
+        width:100%;
+    }
     
+   .picture-box{
+    width:50%;
+    float:right;
+    display:block;
+    margin:0em 0em 2em 2em;
+    
+} 
 /*#title-row-AboutUs{
     height:450px;
     background:url(AB%20office%20photo.jpg) 0;
