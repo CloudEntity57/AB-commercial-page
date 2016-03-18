@@ -9,12 +9,12 @@ html{
 }
 #top-row{
     display:flex;
-    background-color:darkcyan;
+    background-color:transparent;
     flex-direction:row;
     height:75px;
     justify-content:space-between;
     /*padding:0px 25px;*/
-    /position:fixed;
+    /*position:fixed;*/
     width:100%;
 }
 #top-row div{
@@ -34,7 +34,7 @@ html{
     height:250px;
     background:url(AB%20office%20photo.jpg);
     background-attachment:fixed;
-    background-size: contain;
+    background-size: 700px;
 }
 .company-info{
     
@@ -121,8 +121,8 @@ footer{
     }
     #title-row, #title-row-AboutUs{
     display:flex;
-    height:450px;
-    justify-content: start;
+    height:600px;
+    justify-content: flex-end;
     background-position: fixed;
     background-size: cover;
         
@@ -137,7 +137,7 @@ footer{
         flex-direction: column;
         
         margin-bottom:1em;
-        margin-left:5em;
+        margin-right:5em;
     }
     .column1{
     display:flex;
