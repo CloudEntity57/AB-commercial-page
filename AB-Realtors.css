@@ -64,6 +64,7 @@ html{
     background:url(AB%20office%20photo.jpg);
     background-attachment:fixed;
     background-size: 700px;
+    background-position: 0px -250px
 }
 
 
@@ -205,6 +206,13 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     }
+    .picture-box{
+    width:40%;
+    float:right;
+    display:block;
+    margin:0em 0em 2em 2em;
+    
+} 
     .column-container{
         display:flex;
     flex-direction: row;
@@ -217,9 +225,11 @@ footer{
     }
     #title-row-AboutUs{
     display:flex;
+    -ms-height:10px;
     height:500px;
+    
     justify-content: flex-start;
-    background-position: 0px -160px;
+    background-position: 0px -300px;
     background-size: cover;
     
         
@@ -228,7 +238,7 @@ footer{
     
     #title-row{
     display:flex;
-    height:600px;
+    height:500px;
     justify-content: flex-start;
     background-position: 0px -160px;
     background-size: cover;
@@ -294,6 +304,17 @@ footer{
     margin:0em 0em 2em 2em;
     
 } 
+    #title-row-AboutUs{
+    
+    background-position: 0px -350px; 
+}
+    
+@media(min-width:1500px){
+    #title-row-AboutUs{
+    
+    background-position: 0px -620px; 
+}
+}
 /*#title-row-AboutUs{
     height:450px;
     background:url(AB%20office%20photo.jpg) 0;
