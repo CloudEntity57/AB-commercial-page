@@ -15,8 +15,10 @@ html{
     height:75px;
     justify-content:space-between;
     /*padding:0px 25px;*/
-    /*position:fixed;*/
+    position:fixed;
+    width:100%;
     margin-top:0px;
+    
 }
 #top-row div{
     display:flex;
@@ -34,6 +36,7 @@ html{
     
 }
 #title-row-AboutUs{
+    
     height:250px;
     background:url(AB%20office%20photo.jpg);
     background-attachment:fixed;
@@ -45,27 +48,47 @@ html{
 #top-picture{
     width:200px;
     height:50px;
+    background-color:lightgray;
 }
 .nav-bar{
     display:flex;
     margin-top:1em;
+    
 }
 .nav-bar div{
     display:block;
     width:300px;
-    padding:.25em 1em;
-    background-color:rgba(255,255,255,.6);
+    /*padding:.25em 1em;*/
+    background-color:rgba(255,255,255,.7);
     height:3em;
     margin:.1em .25em;
     border-radius: 0px;
+    -webkit-transition: color .7s;
+            -moz-transition:    color .7s;
+            -ms-transition:     color .7s;
+            -o-transition:      color .7s;
+            transition:         background-color .7s;
+}
+.nav-bar div:hover{
+    background-color:white;
 }
 
 .nav-bar a{
     display:block;
-    margin:.69em 0em;
+    padding:.7em;
+    /*margin:.69em 0em;*/
     font-size: .85em;
     color:black;
     text-decoration: none;
+    
+    -webkit-transition: color .7s;
+            -moz-transition:    color .7s;
+            -ms-transition:     color .7s;
+            -o-transition:      color .7s;
+            transition:         color .7s;
+}
+.nav-bar a:hover{
+    
 }
 
 .nav-bar img{
@@ -74,7 +97,7 @@ html{
 }
 
 .wrap div{
-    margin:1em 0em;
+    margin:2em 0em;
 }
 .column1{
     display:flex;
@@ -119,15 +142,27 @@ footer{
         width:400px;
         
     }
-    #title-row, #title-row-AboutUs{
+    #title-row-AboutUs{
     display:flex;
     height:600px;
     justify-content: flex-start;
-    background-position: fixed;
+    background-position: 0px -160px;
     background-size: cover;
+    
+        
         
 }
     
+    #title-row{
+    display:flex;
+    height:600px;
+    justify-content: flex-start;
+    background-position: 0px -160px;
+    background-size: cover;
+    
+        
+        
+}
     .nav-bar a{
     font-size: 1.15em;
     color:black;
@@ -135,7 +170,7 @@ footer{
 }
     .nav-bar{
         flex-direction: column;
-        margin: 1em 5em 1em 5em;
+        margin: 12em 5em 1em 5em;
         margin-bottom:1em;
         margin-right:5em;
     }
@@ -167,7 +202,7 @@ footer{
 .column2{
     width:70%;
 }
-    #title-row-AboutUs{
+/*#title-row-AboutUs{
     height:450px;
     background:url(AB%20office%20photo.jpg) 0;
     background-attachment: fixed;
