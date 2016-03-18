@@ -10,21 +10,31 @@ html{
 #top-row{
     display:flex;
     background-color:darkcyan;
-    height:150px;
+    flex-direction:row;
+    height:75px;
     justify-content:space-between;
-    padding:0px 25px;
+    /*padding:0px 25px;*/
+    /*position:fixed;*/
+    width:100%;
 }
 #top-row div{
     display:flex;
     flex-direction: column;
     justify-content: center;
+    padding:0px 25px;
 }
 #title-row{
     height:250px;
     background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
     background-size: cover;
+    
 }
-
+#title-row-AboutUs{
+    height:250px;
+    background:url(AB%20office%20photo.jpg);
+    background-attachment:fixed;
+    background-size: contain;
+}
 .company-info{
     
 }
@@ -108,13 +118,15 @@ footer{
         width:400px;
         
     }
-    #title-row{
+    #title-row, #title-row-AboutUs{
     display:flex;
     height:450px;
     justify-content: space-around;
-    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
+    background-position: fixed;
     background-size: cover;
+        
 }
+    
     .nav-bar a{
     font-size: 1.15em;
     color:white;
@@ -128,6 +140,10 @@ footer{
 }
     .column1 img{
         width:100%;
+    }
+    #top-row{
+     height:150px;  
+    
     }
 
 .column2{
@@ -144,5 +160,11 @@ footer{
 
 .column2{
     width:70%;
+}
+    #title-row-AboutUs{
+    height:450px;
+    background:url(AB%20office%20photo.jpg) 0;
+    background-attachment: fixed;
+    background-size: cover;
 }
 }
