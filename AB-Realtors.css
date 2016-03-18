@@ -26,7 +26,8 @@ html{
 #title-row{
     height:250px;
     background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: contain;
     
 }
 #title-row-AboutUs{
@@ -45,7 +46,7 @@ html{
 }
 .nav-bar{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     
     margin-top:1em;
@@ -135,6 +136,10 @@ footer{
     margin:auto;
     text-decoration: none;
 }
+    .nav-bar{
+        flex-direction: column;
+        
+    }
     .column1{
     display:flex;
     width:40%;
