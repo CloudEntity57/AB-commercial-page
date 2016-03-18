@@ -14,7 +14,7 @@ html{
     height:75px;
     justify-content:space-between;
     /*padding:0px 25px;*/
-    /*position:fixed;*/
+    /position:fixed;
     width:100%;
 }
 #top-row div{
@@ -45,7 +45,9 @@ html{
 }
 .nav-bar{
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
+    
     margin-top:1em;
 }
 .nav-bar div{
@@ -53,7 +55,7 @@ html{
     padding:.25em 1em;
     flex-direction:column;
     justify-content: space-around;
-    background-color:darkcyan;
+    background-color:transparent;
     flex-basis:1000px;
     height:3em;
     margin:0em .25em;
