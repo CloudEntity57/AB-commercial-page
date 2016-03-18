@@ -106,20 +106,37 @@ html{
     padding:0em 1em;
     
 }
-
-.column2{
-    width:100%;
-    padding:0em 1em;
-}
 .column1 img{
     border: 1px solid black;
     width:50%;
     height:100%;
 }
+
+.column2{
+    width:100%;
+    padding:0em 1em;
+}
 .column2 h1{
     margin-top:0;
 
 }
+
+
+.column-general{
+    display:block;
+    
+    width:100%;
+    padding:0em 1em;
+}
+.column-general h1{
+    margin-top:0;
+
+}
+.column-general img{
+    width:50%;
+    float:right;
+}
+
 footer p{
     color:white;
     width:85%;
@@ -202,6 +219,11 @@ footer{
 .column2{
     width:70%;
 }
+
+.column-left{
+    width:100%;
+}
+    
 /*#title-row-AboutUs{
     height:450px;
     background:url(AB%20office%20photo.jpg) 0;
