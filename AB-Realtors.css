@@ -8,6 +8,7 @@ html{
 .wrap{
     width:85%;
     margin:auto;
+    
 }
 
 
@@ -20,14 +21,16 @@ html{
     background-color:rgba(0,0,0,.3);
     color:white;
     flex-direction:row;
-    height:75px;
+    height:150px;
     justify-content:space-between;
     /*padding:0px 25px;*/
-    position:fixed;
+    position:absolute;
     width:100%;
     margin-top:0px;
     
 }
+
+
 #top-row div{
     display:flex;
     flex-direction: column;
@@ -52,6 +55,18 @@ html{
     background-size: 740px;
 }
 
+#title-row2{
+    display:flex;
+    background-color:rgba(0,0,0,.3);
+    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height:150px;
+    width:100%;
+    margin-top:0px;
+    
+}
+
 /*-------------------NAV BAR STYLING-----------------*/
 
 
@@ -74,7 +89,7 @@ html{
             -o-transition:      color .7s;
             transition:         background-color .7s;
 }
-.nav-body{
+.nav-body,.nav-body2{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +102,8 @@ html{
     justify-content: space-between;
     margin:1em 1em 0em 1em;
 }
-.nav-body div, .nav-body2 div{
+
+.nav-body div, .nav-body2 div, nav-body3 div{
         display:block;
         width:100%;
         /*padding:.25em 1em;*/
@@ -123,7 +139,7 @@ html{
             -o-transition:      color .7s;
             transition:         color .7s;
 }
-.nav-body a, .nav-body2 a{
+.nav-body a, .nav-body2 a, .nav-body3 a{
     text-align: center;
     display:block;
     padding:.4em;
@@ -329,7 +345,7 @@ footer{
         margin:0em 0em 2em 2em;
     
 } 
-    .nav-body{
+    .nav-body, .nav-body3{
         display:flex;
         flex-direction: row;
         justify-content: space-between;
