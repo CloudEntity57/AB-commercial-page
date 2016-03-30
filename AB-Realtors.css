@@ -1,4 +1,3 @@
-
 /*---HEADER STYLING---*/
 
 
@@ -8,7 +7,13 @@ html{
 .wrap{
     width:85%;
     margin:auto;
-    
+    background-color: white;
+    min-height:60vh;
+}
+
+#filler{
+    display:block;
+    min-height:100vh;
 }
 
 
@@ -21,10 +26,10 @@ html{
     background-color:rgba(0,0,0,.3);
     color:white;
     flex-direction:row;
-    height:150px;
+    height:70px;
     justify-content:space-between;
     /*padding:0px 25px;*/
-    position:absolute;
+    position:fixed;
     width:100%;
     margin-top:0px;
     
@@ -44,28 +49,118 @@ html{
     background-color:white;
 }
 
+.company-info{
+    font-size:.75em;
+}
+
+#feature-contain{
+        display:flex;
+        position:fixed;
+        flex-direction:row;
+        justify-content: space-around;
+        background-color:gray;
+        width:100%;
+        height:250px;
+        z-index:-3;
+ }
+#feature-contain img{
+    
+}
+#lastPic{
+    display:flex;
+    height:100%;
+   
+}
+#featurePic{
+    display:flex;
+    height:100%;
+    
+}
+#nextPic{
+    display:flex;
+    height:100%;
+    
+}
+
+#featurePic img{
+    display:block;
+    height:150px;
+    position: relative;
+    margin:auto;
+    z-index: -2;
+
+}
+#lastPic img{
+    display:block;
+    height:80px;
+    position: relative;
+    margin:auto;
+    z-index: -2;
+
+}
+#nextPic img{
+    display:block;
+    height:80px;
+    position: relative;
+    margin:auto;
+    z-index: -2;
+
+}
+
+#arrow-container{
+    position:absolute;
+    top:205px;
+    left:45%;
+    display:inline-block;
+    width:50px;
+    height:35px;
+    margin:auto;
+    cursor:default;
+}
+
+#left-arrow{
+    display:inline-block;
+    float:left;
+    width:25px;
+    font-size:1.5em;
+    background-color:lightgray;
+    color:black;
+    z-index: 5;
+    text-align: center;
+}
+
+#right-arrow{
+    display:inline-block;
+    float:right;
+    width:25px;
+    font-size:1.5em;
+    background-color:lightgray;
+    color:black;
+    z-index: 5; 
+    text-align: center;
+}
+
+#scroll{
+    font-size:2em;
+    color:white;
+    margin:auto;
+}
+
 /*-------------------TITLE ROW STYLING-----------------*/
 
-#title-row{
+#title-row, #title-row2{
     display:flex;
     flex-direction:column;
     height:250px;
-    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
+    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg) no-repeat;
     background-attachment: fixed;
     background-size: 740px;
-}
-
-#title-row2{
-    display:flex;
-    background-color:rgba(0,0,0,.3);
-    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    height:150px;
-    width:100%;
-    margin-top:0px;
+    
+    
     
 }
+
+
 
 /*-------------------NAV BAR STYLING-----------------*/
 
@@ -185,7 +280,9 @@ html{
 
 /*------------------BODY STYLING-----------------*/
 
-
+main{
+    background-color: white;
+}
 
 .column1{
     display:flex;
@@ -223,8 +320,7 @@ html{
     margin-top:0;
 
 }
-.picture-box{
-    width:100%;
+.picture-box, .picture-box2{
     float:right;
     margin:0em 0em 2em 2em;
     display:none;
@@ -244,6 +340,7 @@ html{
     max-width: 250px
 }
 .listing-text{
+    display:inline-block;
     padding:0px 25px 0px 0px;
 }
 
@@ -351,15 +448,23 @@ footer{
     #top-row{
         font-size: 1.5em;
     }
+    .company-info{
+        font-size: .85em;
+    }
     .picture-box{
         font-size:12px;
         text-align: center;
-        width:40%;
-        float:right;
-        display:block;
         margin:0em 0em 2em 2em;
-    
 } 
+    .picture-box2{
+        display:block;
+        width:45%;
+        float:right;
+        font-size:12px;
+        text-align: center;
+        margin:0em 0em 2em 2em;
+} 
+
     .nav-body{
         display:flex;
         flex-direction: row;
@@ -462,7 +567,7 @@ footer{
         /*margin: 12em 5em 1em 5em;*/
         width:85%;
         margin:auto;
-        margin-top:12em;
+        margin-top:20em;
         
 }
     .nav-bar ul{
@@ -484,15 +589,74 @@ footer{
     
     #title-row{
         display:flex;
-        height:500px;
-        justify-content: flex-start;
-        background-position: 0px -160px;
+        height:800px;
+        justify-content: space-around;
         background-size: cover;
-    
-        
+}
+    #title-row2{
+        height:150px;
+        background-size: cover;
+}
+    #feature-contain{
+        display:flex;
+        position:absolute;
+        top:0;
+        justify-content: space-around;
+        background-color:gray;
+        width:100%;
+        height:700px;
+        z-index:-1;
         
 }
+   #arrow-container{
+    position:absolute;
+    top:595px;
+    left:40%;
+    display:inline-block;
+    width:270px;
+    height:90px;
+    margin:auto;
+}
+    #left-arrow{
+    display:inline-block;
+    float:left;
+    width:50px;
+    font-size:4em;
+    z-index: 5;
+}
+
+#right-arrow{
+    display:inline-block;
+    float:right;
+    width:50px;
+    font-size:4em;
+    z-index: 5; 
+}
     
+    #featurePic img{
+        display:block;
+        height:400px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
+    #lastPic img{
+        display:block;
+        height:100px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
+    #nextPic img{
+        display:block;
+        height:100px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
     .column1{
         display:flex;
         width:40%;
@@ -517,12 +681,59 @@ footer{
 
 
 
-/*-------------------1050 PX STYLING-----------------*/
+/*-------------------1000 PX STYLING-----------------*/
 
 
 
-@media(min-width:1050px){
+@media(min-width:1000px){
     
+    
+    #arrow-container{
+    position:absolute;
+    top:695px;
+    left:40%;
+    width:270px;
+}
+    
+   #feature-contain{
+        display:flex;
+        position:absolute;
+        top:0;
+        justify-content: space-around;
+        background-color:gray;
+        width:100%;
+        height:800px;
+        z-index:-1;
+        
+} 
+    .company-info{
+        font-size: 1em;
+    }
+
+    #featurePic img{
+        display:block;
+        height:500px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
+    #lastPic img{
+        display:block;
+        height:100px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
+    #nextPic img{
+        display:block;
+        height:100px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
     .column1{
     display:flex;
     width:30%;
@@ -539,8 +750,6 @@ footer{
 }
     
    .picture-box{
-    width:50%;
-    float:right;
     display:block;
     margin:0em 0em 2em 2em;
     
@@ -550,18 +759,35 @@ footer{
     background-position: 0px -350px; 
 }
     
-    
+}
     
 /*-------------------1500 PX STYLING-----------------*/
     
     
     
 @media(min-width:1500px){
-    #title-row-AboutUs{
+    #arrow-container{
+    left:40%;
+    width:270px;
     
-    background-position: 0px -620px; 
 }
+    #lastPic img{
+        display:block;
+        height:200px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
 }
+    #nextPic img{
+        display:block;
+        height:200px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
+}
+
 footer p{
     color:white;
     width:85%;
@@ -588,4 +814,12 @@ footer{
 .link-container div{
     
     font-size: 1em;
+}
+#featurePic img{
+        display:block;
+        height:700px;
+        position: relative;
+        margin:auto;
+        z-index: -2;
+
 }
