@@ -69,16 +69,18 @@ html{
 #lastPic{
     display:flex;
     height:100%;
-   
+    
 }
 #featurePic{
     display:flex;
     height:100%;
     
+    
 }
 #nextPic{
     display:flex;
     height:100%;
+    
     
 }
 
