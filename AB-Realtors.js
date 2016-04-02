@@ -375,11 +375,15 @@
            $($leftarrow).on('click',morpher);
             $($rightarrow).on('click',morpher);
             
+            if($('.hook').attr('class')=='title-row hook'){
+                console.log('yes');
+            $('.hook').click(function(){
+            $('.hook').removeClass('title-row');
+                $('.hook').addClass('title-row3');
+            });
+            };
             
             
-           
-        
-         
             
 
 
