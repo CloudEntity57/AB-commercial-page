@@ -121,6 +121,24 @@
         
         var $photos = $('#feature-contain');
 
+        var $lastPic = ('<div id="lastPic"><img src="'+photoList2[listEnd]+'"  </div>');
+            
+            var $featurePic = ('<div id="featurePic"><img src="'+photoList2[0]+'"  </div>');
+                
+            var $nextPic = ('<div id="nextPic"><img src="'+photoList2[1]+'"  </div>');
+
+            var $prevPic = $('#lastPic');
+            var $currentPic = $('#featurePic');
+            var $comingPic = $('#nextPic');
+            //------------
+            
+            $($prevPic).remove();
+            $($currentPic).remove();
+            $($comingPic).remove();
+
+            $($photos).append($lastPic);
+            $($photos).append($featurePic);
+            $($photos).append($nextPic);
 
 //-----------------------------------------------------RIGHT ARROW CLICK-----------------------
         
