@@ -113,7 +113,7 @@
 
        // header.click(function(){
 
-        var header = $('#title-row');    
+        var header = $('.title-row');    
 
         var i = 0;
 
@@ -128,6 +128,10 @@
         var $rightarrow = $('#right-arrow');
 
         function $scrollclick(){
+            
+            $('.hook').removeClass('title-row');
+            $('.hook').addClass('title-row3');
+            
             i += 1;
                 if (i == photoList2.length){
                     i = 0;
@@ -226,7 +230,7 @@
             
         }
             $($featurePic).remove();
-            header.css("background","none");
+            //header.css("background","none");
             $('#top-row').css("background-color","rgba(0,0,0,0)");
             /*$('#feature-pic').append($featurePic);*/
             addPhoto();
@@ -243,6 +247,10 @@
 //-----------------------------------------------------LEFT ARROW CLICK-----------------------
 
         $leftarrow.click(function(){
+            
+            $('.hook').removeClass('title-row');
+            $('.hook').addClass('title-row3');
+            
             i -= 1;
             if (i == -1){
                     i = listEnd;
@@ -344,92 +352,35 @@
                 
         }
             $($featurePic).remove();
-            header.css("background","none");
+          //  header.css("background","none");
             $('#top-row').css("background-color","rgba(0,0,0,0)");
-            //$leftarrow.css("margin-top","-4em");
-           // $rightarrow.css("margin-top","-14em");
             
-            /*$('#feature-pic').append($featurePic);*/
-            addPhoto();
-            
-                
-                
-                
-            
+            addPhoto();     
+            //$('body').off('click','.hook',morpher);
         });
-            
- /*  ------PREVIOUS VERSION----
-            
-            var $lastPic = ('<div id="lastPic"><img src="'+photoList2[i-1]+'"  </div>');
-            
-            var $featurePic = ('<div id="featurePic"><img src="'+photoList2[i]+'"  </div>');
-            var $nextPic = ('<div id="nextPic"><img src="'+photoList2[i+1]+'"  </div>');
-            
-            //------------
-            
-            var $prevPic = $('#lastPic');
-            var $currentPic = $('#featurePic');
-            var $comingPic = $('#nextPic');
-            //------------
-            
-            $($prevPic).remove();
-            $($currentPic).remove();
-            $($comingPic).remove();
-            
-            //----------
-            
-            
-            
-            //-----------
-            
-            function addPhoto(){
-            $('#feature-contain').append($lastPic);
-            $('#feature-contain').append($featurePic);
-            $('#feature-contain').append($nextPic);
-                
-        }
-            
-            //-----------
-            
-            $($featurePic).remove();
-            header.css("background","none");
-            /*$('#feature-pic').append($featurePic);*/
-/*            addPhoto();
-                
-            i += 1;
-                if (i == photoList2.length){
-                    i = 0;
-                };
-                
-                
-            
- ----------END OF PREVIOUS VERSION */          
-            
-            
-            
-            
-            
-            
-        
-    /* $('#title-row2').css("background",photoList[i]).css("background-repeat", "no-repeat").css("background-size","1000px").css("background-position","center top");
-            
-                console.log(photoList[i]);
-            */
-            
 
-        /*$('#title-row2').css("background",photoList[0]);
-        console.log(photoList[2]);*/
-       /* var header = $('#title-row2');
-        var picNum = jQuery.inArray(titlePic);
-
-                $(header).click(function(){
+            function classChange(){
+                $('.hook').removeClass('title-row3');
+                $('.hook').addClass('title-row');
+                $('#top-row').css("background-color","rgba(0,0,0,.3)")
+                   
                     
-                    var picNum = jQuery.inArray(titlePic,photoList);
-                    
-                    /*$(titlePic).css("background",photoList[picNum+1]);
-                    console.log(picNum);*/
+                }
+            function morpher(){
+                
+                $('.hook').one('click',classChange);
+                
+            }
+            
+           $($leftarrow).on('click',morpher);
+            $($rightarrow).on('click',morpher);
+            
+            
+            
+           
         
+         
+            
 
 
-
-
+ 
