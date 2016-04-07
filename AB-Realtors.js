@@ -13,16 +13,17 @@
         
         $('body').append($overlay);
         var $xbutton = $('<button id="x-button">x</button></div>');
-        
-        $('.picture-box a').click(function(event){
+        function $photoShow (event){
             event.preventDefault();
             var href = $(this).attr("href");
             var $picimage = $('<img id="picbox" src="' +href+'">');
             $overlay.append($xbutton);
             $overlay.append($picimage);
             $overlay.show();
-        });
-        
+        }
+        $('.picture-box2 a').click($photoShow);
+        $('.image-box a').click($photoShow);
+
         function $picRemove(){
             $('#picbox').remove();
         }
