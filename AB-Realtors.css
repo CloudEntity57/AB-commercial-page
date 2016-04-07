@@ -4,10 +4,16 @@
 html{
     background-color:white;
 }
-
 body{
     
 }
+.clearfix::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+
 .wrap{
     width:85%;
     margin:auto;
@@ -297,7 +303,7 @@ body{
 }
 
 
-.plainLink{
+.plainLink, .plainLink a{
     text-decoration: none;
     color: brown;
 }
@@ -339,9 +345,30 @@ main{
     width:100%;
     margin:auto;
     height:10px;
-    border-left:1px solid black;
     border-top:1px solid black;
 }
+
+.anchor{
+  display: block;
+  height: 150px; /*same height as header*/
+  margin-top: -150px; /*same height as header*/
+  visibility:hidden;
+}
+
+.pastel-box{
+    width: 45%;
+    background-color:beige;
+    padding:5px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    
+}
+
+.image-box{
+    justify-content: space-around;
+    display:none;
+}
+
 .column-general{
     display:block;
     margin:2em 0em;
@@ -358,7 +385,7 @@ main{
     display:none;
     
 }
-.picture-box img{
+.picture-box img, .image-box img{
     border:1px solid black;
 }
 
@@ -369,7 +396,7 @@ main{
 }
 .listing [class]:nth-child(1){
     margin-left:0px;
-    max-width: 250px
+    max-width: 250px;
 }
 .listing-text{
     display:inline-block;
@@ -392,7 +419,7 @@ main{
 
 
     #overlay img{
-        height:86%;
+        height:25%;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -427,6 +454,32 @@ main{
     margin-bottom:2em;
 }
 
+.blue{
+    font-weight:bold;
+    color:darkblue;
+    display:inline-block;
+}
+.red{
+    font-size:1.3em;
+    color:red;
+    font-style: italic;
+}
+.consular-table, .consular-table tr, .consular-table td{
+    border:1px solid black;
+    
+}
+.consular-table thead{
+    background-color:darkblue;
+    color:white;
+}
+.consular-table{
+    background-color: beige;
+    width:100%;
+    text-align: center;
+}
+#table{
+    margin:1em;
+}
 /*------------------FOOTER STYLING-----------------*/
 
 footer p{
@@ -489,12 +542,15 @@ footer{
 } 
     .picture-box2{
         display:block;
-        width:45%;
-        float:right;
+        width:35%;
         font-size:12px;
         text-align: center;
         margin:0em 0em 2em 2em;
 } 
+    #overlay img{
+        height:45%;
+    }
+    
 
     .nav-body{
         display:flex;
@@ -705,6 +761,11 @@ footer{
         height:150px;  
     
 }
+    .anchor{
+  height: 150px; /*same height as header*/
+  margin-top: -150px; /*same height as header*/
+
+}
 
     .column2{
          width:60%;
@@ -742,6 +803,9 @@ footer{
         z-index:-1;
         
 } 
+    #overlay img{
+        height:65%;
+    }
     .company-info{
         font-size: 1em;
     }
@@ -790,6 +854,10 @@ footer{
     margin:0em 0em 2em 2em;
     
 } 
+    .image-box{
+      display:flex;  
+        justify-content: space-around;
+    }
     #title-row-AboutUs{
     
     background-position: 0px -350px; 
@@ -807,6 +875,11 @@ footer{
     width:270px;
     
 }
+    
+    #overlay img{
+        height:85%;
+    }
+    
     #lastPic img{
         display:block;
         height:200px;
