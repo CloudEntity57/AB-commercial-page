@@ -139,6 +139,7 @@ body{
     height:35px;
     margin:auto;
     cursor:default;
+    z-index: 1;
 }
 
 #left-arrow{
@@ -175,7 +176,7 @@ body{
     display:flex;
     flex-direction:column;
     height:250px;
-    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae.jpg) no-repeat;
+    background:url(2016-01-Life-of-Pix-free-stock-photos-architecture-details-city-MacNicolae2.jpg) no-repeat;
     background-attachment: fixed;
     background-size: 740px;
 }
@@ -303,13 +304,51 @@ body{
 }
 
 
-.plainLink, .plainLink a{
+#houstonList li{
+    color:blue;
+}
+#houstonList li a{
+    color:blue;
     text-decoration: none;
-    color: brown;
+}
+#houstonList li a:hover{
+    text-decoration: underline;
+}
+#houstonList ol{
+    line-height: 1.5;
 }
 
+#houstonList{
+    display:block;
+    width: 250px;
+    padding-right:2em;
+    border: 1px solid black;
+}
+#contents a{
+    color: blue;
+    text-decoration: none;
+}
+#contents a:hover{
+    text-decoration: underline;
+}
+
+.plainLink li, .plainLink2{
+    color:blue;
+}
 
 /*------------------BODY STYLING-----------------*/
+
+#widgetContainer{
+    width:100%;
+    
+}
+#mywidget59C57F24CB293EB7DFCE3E03F79B3B92{
+    margin-top:15px;
+}
+#widgetOuter{
+    height:5px;
+}
+
 
 main{
     background-color: white;
@@ -317,6 +356,7 @@ main{
 
 .column1{
     display:flex;
+    flex-direction: column;
     width:100%;
     justify-content: space-around;
     padding:0em 1em;
@@ -381,6 +421,12 @@ main{
 }
 .picture-box, .picture-box2{
     float:right;
+    margin:0em 0em 2em 2em;
+    display:none;
+    
+}
+.picture-box3{
+    float:left;
     margin:0em 0em 2em 2em;
     display:none;
     
@@ -540,13 +586,13 @@ footer{
         text-align: center;
         margin:0em 0em 2em 2em;
 } 
-    .picture-box2{
+    .picture-box2, .picture-box3{
         display:block;
         width:35%;
         font-size:12px;
         text-align: center;
         margin:0em 0em 2em 2em;
-} 
+}
     #overlay img{
         height:45%;
     }
@@ -679,6 +725,7 @@ footer{
         height:800px;
         justify-content: space-around;
         background-size: cover;
+        z-index: -1;
 }
     .title-row3{
     
@@ -790,6 +837,7 @@ footer{
     top:695px;
     left:40%;
     width:270px;
+    z-index: 1
 }
     
    #feature-contain{

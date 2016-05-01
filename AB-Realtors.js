@@ -1,5 +1,7 @@
+        
+        
 
-        var links = $(".nav-bar div");
+var links = $(".nav-bar div");
         $(links).hover(function(){
             $(this).find("ul").css("display","block");
         },
@@ -133,13 +135,7 @@
             var $comingPic = $('#nextPic');
             //------------
             
-            $($prevPic).remove();
-            $($currentPic).remove();
-            $($comingPic).remove();
-
-            $($photos).append($lastPic);
-            $($photos).append($featurePic);
-            $($photos).append($nextPic);
+            
 
 //-----------------------------------------------------RIGHT ARROW CLICK-----------------------
         
@@ -379,6 +375,7 @@
         });
 
             function classChange(){
+                console.log("classChange");
                 $('.hook').removeClass('title-row3');
                 $('.hook').addClass('title-row');
                 $('#top-row').css("background-color","rgba(0,0,0,.3)")
@@ -386,27 +383,50 @@
                     
                 }
             function morpher(){
-                
-                $('.hook').one('click',classChange);
+                console.log("morpher");
+                backgroundPhotos.style.display = "flex";
+                $('.hook').one('click',classChange); 
                 
             }
-            
-           $($leftarrow).on('click',morpher);
-            $($rightarrow).on('click',morpher);
-            
-            if($('.hook').attr('class')=='title-row hook'){
-                console.log('yes');
-            $('.hook').click(function(){
+            function firstClick(){
+                backgroundPhotos.style.display = "flex";
             $('.hook').removeClass('title-row');
                 $('.hook').addClass('title-row3');
                 $('#top-row').css("background-color","rgba(0,0,0,0)");
                 morpher();
-            });
+            }   
+
+            $($prevPic).remove();
+            $($currentPic).remove();
+            $($comingPic).remove();
+
+            $($photos).append($lastPic);
+            $($photos).append($featurePic);
+            $($photos).append($nextPic);
+
+           $($leftarrow).on('click',morpher);
+           $($rightarrow).on('click',morpher);
+            
+            if($('.hook').attr('class')=='title-row hook'){
+                console.log('title-row hook');
+            $('.hook').click(firstClick);
+            $('#arrow-container').click(firstClick);
             };
             
+            var contents1 = $("#contents a");
+            var tableOfCont = $("#houstonList li");
             
+            $(contents1).click(function(event){
+                if ($(contents1).html()===("hide")){
+                event.preventDefault();
+                $(tableOfCont).hide("fast");
+                $(contents1).html("show");
+                }else if ($(contents1).html()===("show")){
+                        event.preventDefault();
+                        $(tableOfCont).show("fast");
+                        $(contents1).html("hide");
+                
+                                          };
+            });
             
-            
-
-
  
